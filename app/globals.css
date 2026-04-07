@@ -3,25 +3,61 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --nc-black: #141414;
+  --nc-white: #ffffff;
+  --accent: #C3E941;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: #141414;
+  background: #ffffff;
+  font-family: var(--font-lato), "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+
+  .font-display {
+    font-family: var(--font-archivo-black), Impact, sans-serif;
+  }
+
+  .bg-dot-texture {
+    background-image: radial-gradient(circle, rgba(195,233,65,0.04) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  .section-padding {
+    @apply py-24 md:py-32;
+  }
+
+  .container-width {
+    @apply max-w-7xl mx-auto px-6;
+  }
+}
+
+/* Smooth scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #141414;
+}
+::-webkit-scrollbar-thumb {
+  background: #2A2A2A;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C3E941;
 }
