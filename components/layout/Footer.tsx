@@ -120,12 +120,29 @@ export default function Footer() {
                   sales@nocheck.com
                 </a>
               </div>
-              <div>
-                <p className="font-body text-xs text-[#8A8A8A] uppercase tracking-[0.06em] mb-1">Headquarters</p>
-                <p className="font-body text-sm text-[#C9C9C9]">
-                  Michigan, USA<br />
-                  <span className="text-[#8A8A8A]">+ Luxembourg, EU</span>
-                </p>
+              <div className="space-y-3">
+                <p className="font-body text-xs text-[#8A8A8A] uppercase tracking-[0.06em]">Offices</p>
+                <div>
+                  <p className="font-body text-xs font-bold text-[#C3E941] uppercase tracking-[0.04em] mb-1">Headquarters</p>
+                  <p className="font-body text-xs text-[#C9C9C9] leading-relaxed">
+                    24400 Northwestern Hwy, Suite 210<br />
+                    Southfield, Michigan 48075
+                  </p>
+                </div>
+                <div>
+                  <p className="font-body text-xs font-bold text-[#8A8A8A] uppercase tracking-[0.04em] mb-1">Las Vegas</p>
+                  <p className="font-body text-xs text-[#C9C9C9] leading-relaxed">
+                    9360 W Flamingo Rd<br />
+                    Las Vegas, NV 89147
+                  </p>
+                </div>
+                <div>
+                  <p className="font-body text-xs font-bold text-[#8A8A8A] uppercase tracking-[0.04em] mb-1">Miami</p>
+                  <p className="font-body text-xs text-[#C9C9C9] leading-relaxed">
+                    2121 Ponce de Leon, Ste 250<br />
+                    Coral Gables, FL 33134
+                  </p>
+                </div>
               </div>
               <div>
                 <Link
@@ -180,7 +197,7 @@ export default function Footer() {
             © The NoCheck Group, LLC. All rights reserved.
           </p>
           <p className="font-body text-xs text-[#8A8A8A]">
-            Building financial internet applications since 1993 · Michigan, USA · Luxembourg, EU
+            Building financial internet applications since 1993 · Southfield, MI · Las Vegas, NV · Coral Gables, FL
           </p>
         </div>
       </div>

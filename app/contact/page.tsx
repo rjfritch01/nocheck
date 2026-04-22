@@ -5,7 +5,7 @@ import { SectionReveal } from "@/components/ui/SectionReveal";
 export const metadata: Metadata = {
   title: "Contact NoCheck | Request a Demo — Enterprise Payment Platform",
   description:
-    "Request a demo or talk to our sales team. Phone: 248.621.0900. Email: sales@nocheck.com. Headquartered in Michigan, USA.",
+    "Request a demo or talk to our sales team. Phone: 248.621.0900. Email: sales@nocheck.com. Offices in Southfield, MI · Las Vegas, NV · Coral Gables, FL.",
   alternates: { canonical: "https://nocheck.com/contact" },
 };
 
@@ -198,14 +198,35 @@ export default function ContactPage() {
                         </p>
                       </div>
                     </a>
-                    <div className="flex items-start gap-4">
-                      <div className="w-10 h-10 rounded-lg bg-[#141414] flex items-center justify-center shrink-0">
-                        <MapPin size={16} color="#C3E941" />
+                    <div>
+                      <div className="flex items-center gap-3 mb-4">
+                        <div className="w-10 h-10 rounded-lg bg-[#141414] flex items-center justify-center shrink-0">
+                          <MapPin size={16} color="#C3E941" />
+                        </div>
+                        <p className="font-body text-xs font-bold uppercase tracking-[0.08em] text-[#8A8A8A]">Offices</p>
                       </div>
-                      <div>
-                        <p className="font-body text-xs font-bold uppercase tracking-[0.08em] text-[#8A8A8A]">Headquarters</p>
-                        <p className="font-body text-base text-[#141414]">Michigan, USA</p>
-                        <p className="font-body text-sm text-[#8A8A8A]">+ Luxembourg, EU</p>
+                      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                        <div className="bg-[#141414] rounded-xl p-4 border border-[#C3E941]/30">
+                          <span className="inline-block mb-2 px-2 py-0.5 rounded-full bg-[#C3E941]/10 border border-[#C3E941]/30 font-body text-[10px] font-bold uppercase tracking-[0.06em] text-[#C3E941]">
+                            Headquarters
+                          </span>
+                          <p className="font-body font-bold text-white text-xs mb-1">Southfield, Michigan</p>
+                          <p className="font-body text-xs text-[#8A8A8A] leading-relaxed">
+                            24400 Northwestern Hwy<br />Suite 210<br />Michigan 48075
+                          </p>
+                        </div>
+                        <div className="bg-[#F0F0EE] rounded-xl p-4 border border-[#E5E5E3]">
+                          <p className="font-body font-bold text-[#141414] text-xs mb-2">Las Vegas</p>
+                          <p className="font-body text-xs text-[#5A5A5A] leading-relaxed">
+                            9360 W Flamingo Rd<br />Las Vegas, NV 89147
+                          </p>
+                        </div>
+                        <div className="bg-[#F0F0EE] rounded-xl p-4 border border-[#E5E5E3]">
+                          <p className="font-body font-bold text-[#141414] text-xs mb-2">Miami</p>
+                          <p className="font-body text-xs text-[#5A5A5A] leading-relaxed">
+                            2121 Ponce de Leon<br />Ste 250<br />Coral Gables, FL 33134
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>

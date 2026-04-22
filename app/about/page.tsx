@@ -6,7 +6,7 @@ import { SectionReveal, StaggerContainer, StaggerItem } from "@/components/ui/Se
 export const metadata: Metadata = {
   title: "About NoCheck | Enterprise Payment Platform — Built Since 1993",
   description:
-    "Founded by Charles 'Chuck' Kopko in 1993. Federal Reserve BPC member. Four banking partners: JP Morgan Chase, US Bank, Bank of America, Key Bank. Michigan HQ + Luxembourg EU operations.",
+    "Founded by Charles 'Chuck' Kopko in 1993. Federal Reserve BPC member. Four banking partners: JP Morgan Chase, US Bank, Bank of America, Key Bank. Offices in Southfield, MI · Las Vegas, NV · Coral Gables, FL.",
   alternates: { canonical: "https://nocheck.com/about" },
 };
 
@@ -14,7 +14,7 @@ const timeline = [
   { year: "1993", event: "The NoCheck Group founded by Charles 'Chuck' Kopko. Financial internet applications from day one." },
   { year: "1996", event: "Named preferred service provider — a relationship built on performance, not promises." },
   { year: "2015", event: "Aflac names NoCheck Partner of the Year for Innovation and Technology." },
-  { year: "Today", event: "Billions processed annually. Federal Reserve BPC membership. 4 banking partners. US + EU infrastructure." },
+  { year: "Today", event: "Billions processed annually. Federal Reserve BPC membership. 4 banking partners. 3 US office locations." },
 ];
 
 export default function AboutPage() {
@@ -79,7 +79,7 @@ export default function AboutPage() {
                     Today, our systems facilitate the movement of billions of dollars annually — accurately, securely, and with the kind of agile service that enterprise clients expect from a true partner, not a vendor.
                   </p>
                   <p>
-                    We are headquartered in Michigan, USA, with a separate processing facility in Luxembourg, EU — providing direct access to the European market and geographic redundancy for global clients.
+                    We are headquartered in Southfield, Michigan, with additional offices in Las Vegas, Nevada and Coral Gables, Florida — serving clients across the United States and globally.
                   </p>
                 </div>
               </SectionReveal>
@@ -209,12 +209,17 @@ export default function AboutPage() {
             <SectionReveal delay={0.1}>
               <div className="bg-[#141414] rounded-2xl p-10 border border-[#2A2A2A]">
                 <p className="font-display text-3xl text-[#C3E941] mb-2">USA</p>
-                <h3 className="font-body font-bold text-white text-xl mb-4">Michigan, United States</h3>
+                <h3 className="font-body font-bold text-white text-xl mb-4">Three US Locations</h3>
                 <p className="font-body text-sm text-[#C9C9C9] leading-[1.7] mb-6">
-                  Our primary data center and headquarters. Processing ACH, RTP®, FedNow, and all domestic US payment rails.
+                  Headquartered in Southfield, Michigan, with offices in Las Vegas and Coral Gables. Primary data center processing ACH, RTP®, FedNow, and all domestic US payment rails.
                 </p>
                 <ul className="space-y-2">
-                  {["Primary data center", "US payment rail access", "ACH · RTP® · FedNow · Push-to-Debit"].map((d) => (
+                  {[
+                    "Southfield, Michigan — Headquarters",
+                    "Las Vegas, Nevada — Western US Office",
+                    "Coral Gables, Florida — Southeast Office",
+                    "ACH · RTP® · FedNow · Push-to-Debit",
+                  ].map((d) => (
                     <li key={d} className="flex items-center gap-3 font-body text-sm text-[#8A8A8A]">
                       <span className="w-1.5 h-1.5 rounded-full bg-[#C3E941] shrink-0" />
                       {d}
