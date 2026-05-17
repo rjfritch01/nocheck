@@ -212,7 +212,7 @@ export default function ContactPage() {
                           </span>
                           <p className="font-body font-bold text-white text-xs mb-1">Southfield, Michigan</p>
                           <p className="font-body text-xs text-[#8A8A8A] leading-relaxed">
-                            24400 Northwestern Hwy<br />Suite 210<br />Michigan 48075
+                            24400 Northwestern Hwy<br />Suite 220<br />Southfield, Michigan 48075
                           </p>
                         </div>
                         <div className="bg-[#F0F0EE] rounded-xl p-4 border border-[#E5E5E3]">

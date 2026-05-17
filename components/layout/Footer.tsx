@@ -125,7 +125,7 @@ export default function Footer() {
                 <div>
                   <p className="font-body text-xs font-bold text-[#C3E941] uppercase tracking-[0.04em] mb-1">Headquarters</p>
                   <p className="font-body text-xs text-[#C9C9C9] leading-relaxed">
-                    24400 Northwestern Hwy, Suite 210<br />
+                    24400 Northwestern Hwy, Suite 220<br />
                     Southfield, Michigan 48075
                   </p>
                 </div>

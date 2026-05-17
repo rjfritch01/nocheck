@@ -79,7 +79,7 @@ export default function AboutPage() {
                     Today, our systems facilitate the movement of billions of dollars annually — accurately, securely, and with the kind of agile service that enterprise clients expect from a true partner, not a vendor.
                   </p>
                   <p>
-                    We are headquartered in Southfield, Michigan, with additional offices in Las Vegas, Nevada and Coral Gables, Florida — serving clients across the United States and globally.
+                    We are headquartered in Southfield, Michigan, with additional offices in Las Vegas, Nevada and Coral Gables, Florida — serving clients across the United States.
                   </p>
                 </div>
               </SectionReveal>
@@ -197,55 +197,36 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Global */}
+      {/* National */}
       <section className="bg-white py-24">
         <div className="max-w-7xl mx-auto px-6">
           <SectionReveal>
             <h2 className="font-display text-[2rem] md:text-[2.5rem] leading-none uppercase tracking-tight text-[#141414] mb-12">
-              Global Infrastructure
+              National Infrastructure
             </h2>
           </SectionReveal>
-          <div className="grid md:grid-cols-2 gap-8">
-            <SectionReveal delay={0.1}>
-              <div className="bg-[#141414] rounded-2xl p-10 border border-[#2A2A2A]">
-                <p className="font-display text-3xl text-[#C3E941] mb-2">USA</p>
-                <h3 className="font-body font-bold text-white text-xl mb-4">Three US Locations</h3>
-                <p className="font-body text-sm text-[#C9C9C9] leading-[1.7] mb-6">
-                  Headquartered in Southfield, Michigan, with offices in Las Vegas and Coral Gables. Primary data center processing ACH, RTP®, FedNow, and all domestic US payment rails.
-                </p>
-                <ul className="space-y-2">
-                  {[
-                    "Southfield, Michigan — Headquarters",
-                    "Las Vegas, Nevada — Western US Office",
-                    "Coral Gables, Florida — Southeast Office",
-                    "ACH · RTP® · FedNow · Push-to-Debit",
-                  ].map((d) => (
-                    <li key={d} className="flex items-center gap-3 font-body text-sm text-[#8A8A8A]">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#C3E941] shrink-0" />
-                      {d}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </SectionReveal>
-            <SectionReveal delay={0.2}>
-              <div className="bg-[#141414] rounded-2xl p-10 border border-[#2A2A2A]">
-                <p className="font-display text-3xl text-[#C3E941] mb-2">EU</p>
-                <h3 className="font-body font-bold text-white text-xl mb-4">Luxembourg, European Union</h3>
-                <p className="font-body text-sm text-[#C9C9C9] leading-[1.7] mb-6">
-                  Our European processing center. Direct access to SEPA payment infrastructure and international wire capabilities for global clients.
-                </p>
-                <ul className="space-y-2">
-                  {["Secondary processing center", "SEPA payment infrastructure", "International wire · ISO · ML formats"].map((d) => (
-                    <li key={d} className="flex items-center gap-3 font-body text-sm text-[#8A8A8A]">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#C3E941] shrink-0" />
-                      {d}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </SectionReveal>
-          </div>
+          <SectionReveal delay={0.1}>
+            <div className="bg-[#141414] rounded-2xl p-10 border border-[#2A2A2A]">
+              <p className="font-display text-3xl text-[#C3E941] mb-2">USA</p>
+              <h3 className="font-body font-bold text-white text-xl mb-4">Three US Locations</h3>
+              <p className="font-body text-sm text-[#C9C9C9] leading-[1.7] mb-6">
+                Headquartered in Southfield, Michigan, with offices in Las Vegas and Coral Gables. Primary data center processing ACH, RTP®, FedNow, and all domestic US payment rails.
+              </p>
+              <ul className="space-y-2">
+                {[
+                  "Southfield, Michigan — Headquarters",
+                  "Las Vegas, Nevada — Western US Office",
+                  "Coral Gables, Florida — Southeast Office",
+                  "ACH · RTP® · FedNow · Push-to-Debit",
+                ].map((d) => (
+                  <li key={d} className="flex items-center gap-3 font-body text-sm text-[#8A8A8A]">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#C3E941] shrink-0" />
+                    {d}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </SectionReveal>
         </div>
       </section>
 
